@@ -1,7 +1,6 @@
 ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
-/* Month header */
 .month {
   padding: 300px 60px;
   width: 200%;
@@ -9,7 +8,6 @@ body {font-family: Verdana, sans-serif;}
   text-align: center;
 }
 
-/* Month list */
 .month ul {  
   margin: 0;
   padding: 0;
@@ -22,19 +20,16 @@ body {font-family: Verdana, sans-serif;}
   letter-spacing: 3px;
 }
 
-/* Previous button inside month header */
 .month .prev {
   float: left;
   padding-top: 10px;
 }
 
-/* Next button */
 .month .next {
   float: right;
   padding-top: 10px;
 }
 
-/* Weekdays (Mon-Sun) */
 .weekdays {
   margin: 0;
   padding: 10px 0;
@@ -48,7 +43,6 @@ body {font-family: Verdana, sans-serif;}
   text-align: center;
 }
 
-/* Days (1-31) */
 .days {
   padding: 10px 0;
   background: #eee;
@@ -65,7 +59,6 @@ body {font-family: Verdana, sans-serif;}
   color: #0084bd;
 }
 
-/* Highlight the "current" day */
 .days li .active {
   padding: 5px;
   background: #1a58bc;
