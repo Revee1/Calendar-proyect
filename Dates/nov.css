@@ -1,0 +1,140 @@
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 300px 60px;
+  width: 200%;
+  background:  #1273af;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {  
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #0084bd;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1a58bc;
+  color: white !important
+}
+
+  
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-right: 20%;
+}
+
+.button1 {
+  background-color: #fcfcfc; 
+  color: #5d8eee; 
+  border: 2px solid #5d8eee;
+  font-size: 25px;
+  font-family: Oswald;
+}
+
+.button1:hover {
+  background-color: #0f00e0;
+  color: white;
+  font-size: 25px;
+    font-family: Oswald;
+}
+
+  .button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100px;
+}
+
+.button1 {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+
+/* Button on  */
+
+.button3 {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 40px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 24px;
+}
+
+
+.button3 {border-radius: 8px;}
+
