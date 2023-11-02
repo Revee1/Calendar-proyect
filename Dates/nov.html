@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="/Dates/nov.css">
+
+  <head>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style-type: none;
+      }
+
+      body {
+        font-family: Verdana, sans-serif;
+      }
+
+      .month {
+        padding: 100px 60px;
+        width: 100%;
+        background: #1273af;
+        text-align: center;
+        T
+      }
+
+      .month ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      t .month ul li {
+        color: white;
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+      }
+
+      .month .prev {
+        float: left;
+        padding-top: 10px;
+        color: white;
+        background-color: transparent;
+        border-color: transparent;
+      }
+
+      .month .next {
+        float: right;
+        padding-top: 10px;
+        color: white;
+        background-color: transparent;
+        border-color: transparent;
+
+
+      }
+
+      .weekdays {
+        margin: 0;
+        padding: 10px 0;
+        background-color: #ddd;
+      }
+
+      .weekdays li {
+        display: inline-block;
+        width: 13.6%;
+        color: #666;
+        text-align: center;
+      }
+
+      .days {
+        W padding: 20px 0;
+        background: #eee;
+        margin: 0;
+      }
+
+      .days li {
+        list-style-type: none;
+        display: inline-block;
+        width: 13.6%;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 17px;
+        color: #777;
+      }
+
+      .days li .active {
+        padding: 5px;
+        background: #1273af;
+        color: white !important
+      }
+
+      @media screen and (max-width:720px) {
+
+        .weekdays li,
+        .days li {
+          width: 13.1%;
+        }
+      }
+
+      @media screen and (max-width: 420px) {
+
+        .weekdays li,
+        .days li {
+          width: 12.5%;
+        }
+
+        .days li .active {
+          padding: 2px;
+        }
+      }
+
+      @media screen and (max-width: 290px) {
+
+        .weekdays li,
+        .days li {
+          width: 12.2%;
+        }
+      }
+    </style>
+  </head>
+
+<body>
+
+
+  <div class="month">
+    <ul>
+      <button class="prev">
+        <a class="prev" href="/Dates/oct.html">
+          <li class="prev">&#10094;</li>
+        </a>
+      </button>
+
+      <button class="next">
+        <a class="next" href="/Dates/dec.html">
+          <li class="next">&#10095;</li>
+        </a>
+      </button>
+      <li>
+        November<br>
+        <span style="font-size:20px">2023</span>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="weekdays">
+    <li>Mo</li>
+    <li>Tu</li>
+    <li>We</li>
+    <li>Th</li>
+    <li>Fr</li>
+    <li>Sa</li>
+    <li>Su</li>
+  </ul>
+
+  <ul class="days">
+    <li>0</li>
+    <li>0</li>
+    <li>1</li>
+    <li><span class="active">2</span></li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+    <li>21</li>
+    <li>22</li>
+    <li>23</li>
+    <li>24</li>
+    <li>25</li>
+    <li>26</li>
+    <li>27</li>
+    <li>28</li>
+    <li>29</li>
+    <li>30</li>
+
+
+  </ul>
+
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Calendar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+
+    }
+
+
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      background-color: #fff;
+      padding: 90px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    form {
+      width: 45%;
+    }
+
+    table {
+      width: 50%;
+      margin-left: 5%;
+      margin-top: 20px;
+      border-collapse: 40%;
+      background-color: #fff;
+    }
+
+    form label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 8px;
+      width: 100px;
+      padding-right: 10px;
+      text-align: right;
+    }
+
+    form input[type="text"],
+    form input[type="date"],
+    form input[type="time"],
+    form input[type="submit"] {
+      width: 250px;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    form input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <form id="eventForm">
+      <label for="eventName">Event Name:</label>
+      <input type="text" id="eventName" required>
+
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" required>
+
+      <label for="startTime">Start Time:</label>
+      <input type="time" id="startTime" required>
+
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDate" required>
+
+      <label for="endTime">End Time:</label>
+      <input type="time" id="endTime" required>
+
+      <input type="submit" value="Add Event">
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Event Name</th>
+          <th>Start Date & Time</th>
+          <th>End Date & Time</th>
+        </tr>
+      </thead>
+      <tbody id="eventTable">
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    document.getElementById("eventForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const eventName = document.getElementById("eventName").value;
+      const startDate = document.getElementById("startDate").value;
+      const startTime = document.getElementById("startTime").value;
+      const endDate = document.getElementById("endDate").value;
+      const endTime = document.getElementById("endTime").value;
+
+      const eventObj = {
+        eventName: eventName,
+        startDateTime: `${startDate} ${startTime}`,
+        endDateTime: `${endDate} ${endTime}`
+      };
+
+      const table = document.getElementById("eventTable");
+      const newRow = table.insertRow(-1);
+
+      const cell1 = newRow.insertCell(0);
+      const cell2 = newRow.insertCell(1);
+      const cell3 = newRow.insertCell(2);
+
+      cell1.innerHTML = eventObj.eventName;
+      cell2.innerHTML = eventObj.startDateTime;
+      cell3.innerHTML = eventObj.endDateTime;
+
+      document.getElementById("eventName").value = "";
+      document.getElementById("startDate").value = "";
+      document.getElementById("startTime").value = "";
+      document.getElementById("endDate").value = "";
+      document.getElementById("endTime").value = "";
+    });
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="dolist.html">
+  <button class="button1">To Do List</button>
+</a>   
