@@ -1,0 +1,85 @@
+body{
+  background-image: url('https://wallpaperaccess.com/full/701817.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #fcfcfc; 
+  color: #5d8eee; 
+  border: 2px solid #5d8eee;
+  font-size: 25px;
+  font-family: Verdana;
+}
+
+.button1:hover {
+  background-color: #0f00e0;
+  color: white;
+  font-size: 25px;
+    font-family: Itim;
+}
+
+  .button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 100px;
+}
+
+.button1 {
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
+}
+
+
+h1 {
+
+  text-align: center
+  
+  
+}
+
+
+
+  
+
+
+    
+  <h1 style="font-size:150px;">Calendar</h1>
+  <h1 style="color:blue;">This is a heading</h1>
+  <h1 style="font-family:verdana;">This is a heading</h1>
+
+
+}
+
+
+
+
+.fingerprint {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
